@@ -1,0 +1,98 @@
+{
+  "studio_version": 28,
+  "features": {
+    "advanced_audio": true
+  },
+  "sources": [
+    {
+      "id": "ffmpeg_source",
+      "name": "IPCam2 Video",
+      "settings": {
+        "input": "http://localhost:8085/video",
+        "input_format": "",
+        "network_buffering": 2,
+        "network_caching": 1000,
+        "auto_load": false,
+        "hw_decode": false,
+        "file": "",
+        "is_local_file": false
+      },
+      "enabled": true
+    },
+    {
+      "id": "ffmpeg_source",
+      "name": "IPCam2 Audio",
+      "settings": {
+        "input": "http://localhost:8085/audio",
+        "input_format": "",
+        "network_buffering": 2,
+        "network_caching": 1000,
+        "auto_load": false,
+        "hw_decode": false,
+        "file": "",
+        "is_local_file": false
+      },
+      "enabled": true
+    }
+  ],
+  "scenes": [
+    {
+      "id": "IPCam2",
+      "name": "IPCam2",
+      "sources": [
+        {
+          "name": "IPCam2 Video",
+          "id": "ffmpeg_source",
+          "settings": {
+            "input": "http://localhost:8085/video",
+            "input_format": "",
+            "network_buffering": 2,
+            "network_caching": 1000,
+            "auto_load": false,
+            "hw_decode": false,
+            "file": "",
+            "is_local_file": false
+          },
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720
+        },
+        {
+          "name": "IPCam2 Audio",
+          "id": "ffmpeg_source",
+          "settings": {
+            "input": "http://localhost:8085/audio",
+            "input_format": "",
+            "network_buffering": 2,
+            "network_caching": 1000,
+            "auto_load": false,
+            "hw_decode": false,
+            "file": "",
+            "is_local_file": false
+          },
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720
+        }
+      ],
+      "volume": 1.0
+    }
+  ],
+  "config": {
+    "output_mode": "simple",
+    "BaseCX": 1280,
+    "BaseCY": 720,
+    "OutputCX": 1280,
+    "OutputCY": 720,
+    "FPS": 30,
+    "sample_rate": 44100,
+    "channels": 2,
+    "virtual_camera": {
+      "enabled": true
+    }
+  }
+}

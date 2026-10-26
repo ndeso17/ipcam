@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_layout" type="id" />
+    <item name="preview_view" type="id" />
+    <item name="control_button" type="id" />
+    <item name="overlayFilterMenu" type="id" />
+    <item name="btnFilterToggle" type="id" />
+    <item name="filterChipsContainer" type="id" />
+</resources>
